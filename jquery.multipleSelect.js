@@ -18,21 +18,23 @@
             select_all: true,
             select_all_label: 'Selecionar Todos',
             check_selected: true,
+	    invalid_element: 'Ops... Só é permitido aplicar o plugin multipleSelect em elementos\nSELECT.',
 			
             // callbacks and debug
             callback: null,
             debug : false
         };
-        // faz o merge dos parametros do plugin
+        // merge of parametters
         var options = $.extend(defaults, options);
         
-        // Se tiver debug ele joga os parametros para o console
+        // IF debug than print on console
         if(options.debug == true && !$.browser.msie && window.console && window.console.firebug)
             console.info(options);
 		
-        // declara as variaveis
+        // vars
         var value;
         var name;
+        var id_val;
         var content;
         var name_field;
         var id_field;
@@ -43,8 +45,10 @@
 		
             if($(this).get(0).tagName == 'SELECT'){
 		
-                id_field = 'multiple_'+$(this).attr('id');
-			
+		// get the ID
+                id_val   = $(this).attr('id');
+		id_field = 'multiple_'+id_val;
+		
                 var html_result = '<div id="div_'+id_field+'" name="div_'+id_field+'" class="selectMultiplo" style="width: '+options.width+'; height:'+options.height+' ; overflow:'+options.overflow+' ; border:'+options.border+' ; '+options.more_style+' ">';
                 html_result += '<table>';
                 html_result += '<tbody id="'+id_field+'">';		
@@ -98,21 +102,21 @@
                 $('#'+id_field).find("tr:even").css('background-color', options.color_even);
 			
             } else {
-                alert('Ops... Só é permitido aplicar o plugin multipleSelect em elementos\nSELECT.');
+                alert(options.invalid_element);
             }
 			
         });
 		
-        // search on the DIV
+        // all checkbox
         $(".selecionar_todos").click(function(){
             if($(this).attr("checked") == true){
-                $('#div_'+$(this).attr('id')+' :checkbox').attr("checked","checked");
+                $('#div_'+id_val+' :checkbox').attr("checked","checked");
             }else {
-                $('#div_'+$(this).attr('id')+' :checkbox').removeAttr("checked");
+                $('#div_'+id_val+' :checkbox').removeAttr("checked");
             }
         });
 						
-        // Casso tenha callback para executar ele dispara a chamada
+        // There is callback? so execute...
         if(options.callback != null)
             options.callback.call(this);
 		
