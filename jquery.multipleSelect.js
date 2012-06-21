@@ -109,10 +109,11 @@
 		
         // all checkbox
         $(".selecionar_todos").click(function(){
-            if($(this).attr("checked") == true){
-                $('#div_'+id_val+' :checkbox').attr("checked","checked");
+            var id_select_all = $(this).attr('id');
+            if($(this).attr("checked") == 'checked'){
+                $('#div_' + id_select_all + ' :checkbox').attr("checked","checked");
             }else {
-                $('#div_'+id_val+' :checkbox').removeAttr("checked");
+                $('#div_' + id_select_all + ' :checkbox').removeAttr("checked");
             }
         });
 						
