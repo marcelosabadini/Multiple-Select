@@ -15,12 +15,15 @@
                 $('#estilos').multipleSelect();
                 
                 // Alterando a altura do elemento
+                // Alterando o label do 'Selecionar Todos'
                 $('#interesses').multipleSelect({
                     height: '125px',
                     select_all_label: 'Todos'
                 });
                 
-                // Usando o callback para remover o primeiro elemento
+                // Usando o callback para remover o primeiro elemento do SELECT que era o 'Escolha o livro aqui...'
+                // Removendo o 'selecionar todos'
+                // Alterando a autura
                 $('#livro').multipleSelect({
                     select_all: false,
                     height: '300px',
@@ -39,7 +42,7 @@
     </head>
     <body>
 
-        Configuração padrão: <BR>
+        Configuração padrão: <br />
         <select id="estilos" name="estilos">
             <option value="1" selected="">Blues</option>
             <option value="2">Rock</option>
@@ -47,8 +50,8 @@
             <option value="5">MPB</option>
         </select>
         
-        <BR><BR>
-        Altura e texto Selecionar Todos modificado: <BR>
+        <br /><br />
+        Altura e texto Selecionar Todos modificado: <br />
         <select id="interesses" name="interesses">
             <option value="f" selected="">Guitarra</option>
             <option value="v">Violão</option>
@@ -56,8 +59,8 @@
             <option value="t">Teclado</option>
         </select>
         
-        <BR><BR>
-        Com callback para remover o primeiro elemento:<BR>
+        <br /><br />
+        Com callback para remover o primeiro elemento:<br />
         <select id="livro" name="livro">
             <option value=''>Escolha o livro aqui...</option>
             <option value='1CO'>1 Coríntios</option>
