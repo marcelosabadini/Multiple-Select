@@ -16,7 +16,6 @@ A idéia é o plugin funcionar em qualquer projeto, porém EU NÃO TESTEI FORA D
 * Dentro do bloco de códigos dispare o plugin para o seletor que melhor lhe atenda, ex:
 
     $(function() {
-        
         // Aplica em TODOS os elementos SELECT da página
         $('select').multipleSelect();
 
@@ -25,13 +24,11 @@ A idéia é o plugin funcionar em qualquer projeto, porém EU NÃO TESTEI FORA D
 
         // Aplica nos elementos com ID 'estado' e 'interesses'
         $('#estado, #interesses').multipleSelect();
-
     });
 
 * Na chamada do plugin pode-se passar um objeto com algumas configurações, ex: 
 
     $(function() {
-        
         $('.multiplo').multipleSelect(
             {
                 width: '300px', // largura
@@ -39,13 +36,11 @@ A idéia é o plugin funcionar em qualquer projeto, porém EU NÃO TESTEI FORA D
                 overflow: 'auto' // barra de rolagem
             }
         );
-
     });
 
 * Você pode passar um callback para quando o plugin terminar de desenhar o novo elemento na página, ex:
 
     $(function() {
-            
         $('.multiplo').multipleSelect(
             {
                 callback: function(){
@@ -53,7 +48,6 @@ A idéia é o plugin funcionar em qualquer projeto, porém EU NÃO TESTEI FORA D
                 }
             }
         );
-
     });
 
 * Veja toda opções de configuração e seus valores padrão:
