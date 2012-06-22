@@ -16,7 +16,7 @@ A idéia é o plugin funcionar em qualquer projeto, porém EU NÃO TESTEI FORA D
 * Dentro do bloco de códigos dispare o plugin para o seletor que melhor lhe atenda, ex:
 
     $(function() {
-            
+        
         // Aplica em TODOS os elementos SELECT da página
         $('select').multipleSelect();
 
@@ -31,7 +31,7 @@ A idéia é o plugin funcionar em qualquer projeto, porém EU NÃO TESTEI FORA D
 * Na chamada do plugin pode-se passar um objeto com algumas configurações, ex: 
 
     $(function() {
-            
+        
         $('.multiplo').multipleSelect(
             {
                 width: '300px', // largura
