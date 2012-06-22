@@ -1,11 +1,7 @@
 Este plugin faz com que elementos html <select> sejam transformados em select multiplo. 
 Ele remove o <select> da tela e monta uma div com os checkbox.
 
-Este plugin até o momento NÃO TRATA OPTION GROUP.
-
-** IMPORTANTE **
-
-A idéia é o plugin funcionar em qualquer projeto, porém EU NÃO TESTEI FORA DO MEU PROJETO.
+Este plugin até o momento <b>NÃO TRATA OPTION GROUP</b>.
 
 # Como utilizar:
 
