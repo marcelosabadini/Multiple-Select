@@ -7,13 +7,13 @@ Este plugin até o momento NÃO TRATA OPTION GROUP.
 
 A idéia é o plugin funcionar em qualquer projeto, porém EU NÃO TESTEI FORA DO MEU PROJETO.
 
-Como utilizar:
+# Como utilizar:
 
-1) Faça o import do jQuery no seu projeto;
+* Faça o import do jQuery no seu projeto;
 
-2) Faça o import do jquery.multipleSelect.js;
+* Faça o import do jquery.multipleSelect.js;
 
-3) Dentro do bloco de códigos dispare o plugin para o seletor que melhor lhe atenda, ex:
+* Dentro do bloco de códigos dispare o plugin para o seletor que melhor lhe atenda, ex:
 
     $(function() {
             
@@ -28,7 +28,7 @@ Como utilizar:
 
     });
 
-4) Na chamada do plugin pode-se passar um objeto com algumas configurações, ex: 
+* Na chamada do plugin pode-se passar um objeto com algumas configurações, ex: 
 
     $(function() {
             
@@ -42,7 +42,7 @@ Como utilizar:
 
     });
 
-5) Você pode passar um callback para quando o plugin terminar de desenhar o novo elemento na página, ex:
+* Você pode passar um callback para quando o plugin terminar de desenhar o novo elemento na página, ex:
 
     $(function() {
             
@@ -56,7 +56,7 @@ Como utilizar:
 
     });
 
-6) Veja toda opções de configuração e seus valores padrão:
+* Veja toda opções de configuração e seus valores padrão:
 
     width: '300px', // largura
     height: '100px', // altura
@@ -75,4 +75,4 @@ Como utilizar:
 
     debug : false // Se for TRUE ele vai exibindo algumas informações no console do Firebug
 
-Se quiser fazer um fork e/ou enviar um suas melhorias fique a vontade :)
+# Se quiser fazer um fork e/ou enviar um suas melhorias fique a vontade :)
