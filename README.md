@@ -60,22 +60,20 @@ Este plugin até o momento <b>NÃO TRATA OPTION GROUP</b>.
 
 * Veja toda opções de configuração e seus valores padrão:
 
-    ```
-    width: '300px', // largura
-    height: '100px', // altura
-    overflow: 'auto', // barra de rolagem
-    border: '1px solid black', // borda
-    color_odd: '#F3F3F3', // cora das linhas impares
-    color_even: '#FFFFFF', // cor das linhas pares
-    more_style: '', // se quiser passar mais comandos CSS então ele vai inserir este conteúdo dentro do style=''
+    * width: '300px', // largura
+    * height: '100px', // altura
+    * overflow: 'auto', // barra de rolagem
+    * border: '1px solid black', // borda
+    * color_odd: '#F3F3F3', // cora das linhas impares
+    * color_even: '#FFFFFF', // cor das linhas pares
+    * more_style: '', // se quiser passar mais comandos CSS então ele vai inserir este conteúdo dentro do style=''
 
-    // general options
-    hide_original_element: true, // se deve remover o elemento original(SELECT) da tela
-    select_all: true, // se vai habilitar o 'Selecionar todos'
-    select_all_label: 'Selecionar Todos', // O texto do Selecionar Todos
-    check_selected: true, // se deve deixar checkado os elementos que estavam como selected no SELECT
-    invalid_element: 'Ops... Só é permitido aplicar o plugin multipleSelect em elementos\nSELECT.', // Texto exibido caso atribua o plugin para um elemento diferente de SELECT
+    * hide_original_element: true, // se deve remover o elemento original(SELECT) da tela
+    * select_all: true, // se vai habilitar o 'Selecionar todos'
+    * select_all_label: 'Selecionar Todos', // O texto do Selecionar Todos
+    * check_selected: true, // se deve deixar checkado os elementos que estavam como selected no SELECT
+    * invalid_element: 'Ops... Só é permitido aplicar o plugin multipleSelect em elementos\nSELECT.', // Texto exibido caso atribua o plugin para um elemento diferente de SELECT
 
-    debug : false // Se for TRUE ele vai exibindo algumas informações no console do Firebug
-    ```
+    * debug : false // Se for TRUE ele vai exibindo algumas informações no console do Firebug
+
 # Se quiser fazer um fork e/ou enviar um suas melhorias fique a vontade :)
